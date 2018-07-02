@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.hpandro.firebaseflow.R;
+import com.hpandro.firebaseflow.activity.MainActivity;
 import com.hpandro.firebaseflow.pojo.Person;
 
 import java.util.List;
@@ -47,7 +48,7 @@ public class PersonsAdapter extends RecyclerView.Adapter<PersonsAdapter.MyViewHo
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                ((MainActivity) mActivity).updateData(mPerson.getId(), mPerson.getName(), mPerson.getDetails());
+                ((MainActivity) mActivity).updateData(mPerson.getId(), mPerson.getName(), mPerson.getDetails());
             }
         });
     }
