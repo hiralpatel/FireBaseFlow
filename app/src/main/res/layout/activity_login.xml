@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Login"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Title" />
+
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead" />
+
+    <EditText
+        android:id="@+id/edtPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorAccent"
+        android:onClick="loginUser"
+        android:padding="10dp"
+        android:text="Login"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Button" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="right"
+        android:onClick="resetPassword"
+        android:text="Reset password?"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:onClick="openSignUp"
+        android:text="Not a user? SignUp here"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead" />
+
+</LinearLayout>

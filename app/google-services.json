@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "432618159174",
+    "firebase_url": "https://fir-flow.firebaseio.com",
+    "project_id": "fir-flow",
+    "storage_bucket": "fir-flow.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:432618159174:android:14a87f3b21666735",
+        "android_client_info": {
+          "package_name": "com.hpandro.firebaseflow"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "432618159174-nphfo9pp03lipbdv2iqr8gu0odnb0c17.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA09N9st8SSV2G5Ex886CGevAdmrHk8h6k"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
