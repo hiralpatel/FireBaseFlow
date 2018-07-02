@@ -50,11 +50,8 @@ public class LoginActivity extends AppCompatActivity {
                                     Toast.makeText(LoginActivity.this, "Please verify email first!", Toast.LENGTH_LONG).show();
                                     return;
                                 }
-                                System.out.println("++++ sign in user:" + Utils.user.getEmail());
-                                System.out.println("++++ sign in user:" + Utils.user.getDisplayName());
-                                System.out.println("++++ sign in user:" + Utils.user.getUid());
-                                System.out.println("++++ sign in user:" + Utils.user.getPhoneNumber());
-                                System.out.println("++++ sign in user:" + Utils.user.getPhotoUrl());
+                                Log.d(TAG, "Email:" + Utils.user.getEmail());
+                                Log.d(TAG, "Uid:" + Utils.user.getUid());
 
                                 Intent mIntent = new Intent(LoginActivity.this, MainActivity.class);
                                 startActivity(mIntent);

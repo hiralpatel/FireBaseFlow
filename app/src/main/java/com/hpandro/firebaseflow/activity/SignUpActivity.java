@@ -48,13 +48,11 @@ public class SignUpActivity extends AppCompatActivity {
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if (task.isSuccessful()) {
                                 Utils.user = AppConfig.getAuth().getCurrentUser();
-                                System.out.println("++++ sign up user:" + Utils.user.getEmail());
-                                System.out.println("++++ sign up user:" + Utils.user.getDisplayName());
-                                System.out.println("++++ sign up user:" + Utils.user.getUid());
-                                System.out.println("++++ sign up user:" + Utils.user.getPhoneNumber());
-                                System.out.println("++++ sign up user:" + Utils.user.getPhotoUrl());
+                                Log.d(TAG, "Email:" + Utils.user.getEmail());
+                                Log.d(TAG, "Uid:" + Utils.user.getUid());
                                 sendVerification();
                             } else {
+                                Toast.makeText(SignUpActivity.this, task.getException().getMessage(), Toast.LENGTH_LONG).show();
                                 Log.e(TAG, "create Account: Fail!", task.getException());
                             }
                         }
